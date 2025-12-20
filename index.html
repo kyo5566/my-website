@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>我的第一个网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录页面示例</title>
+  <style>
+    /* 设置整体背景为深红色渐变 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom, #8B0000, #4B0000);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    /* 模拟顶部的徽章 */
+    .emblem {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .instruction {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* 输入框样式 */
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      background: transparent;
+      color: white;
+      box-sizing: border-box; /* 确保宽度包含内边距 */
+    }
+
+    /* 占位文字颜色 */
+    ::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .hint {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* 登录按钮样式 */
+    .login-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: #E60000;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>你好，GitHub Pages！</h1>
-  <p>这是我免费上线的网站。</p>
-<img src="photo881.jpg" width="300">
+
+  <div class="container">
+    <img src="images/photo881.png" alt="徽章" class="emblem">
+
+    <h1>CHÍNH PHỦ</h1>
+    <p class="subtitle">CỔNG THÔNG TIN TRỰC TUYẾN QUỐC GIA</p>
+
+    <p class="instruction">Vui lòng đăng nhập thông tin trực tuyến để tiếp tục</p>
+
+    <form>
+      <input type="text" placeholder="Vui lòng nhập số điện thoại">
+      <input type="password" placeholder="Vui lòng nhập mật khẩu">
+      
+      <p class="hint">
+        Mật khẩu đăng nhập của bạn gồm 8-12 kí tự bao gồm chữ hoa, chữ thường, số và ký tự
+      </p>
+
+      <button type="submit" class="login-btn">Đăng Nhập</button>
+    </form>
+  </div>
+
 </body>
 </html>
-
-
